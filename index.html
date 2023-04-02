@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en"
+<head> 
+    <meta charset="UTF-8"
+    <meta http-equiv="X-UA-Compatible" content="IE=dge">
+    <meta name="viewport" content="width=device-width",intial-scale=1.0>
+    <title> Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+   <div class="container">
+    <nav>
+        <img src="logo/images.png" class="logo">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="header-text">
+        <p>WEB DEVELOPER</p>
+        <h1>Hii, This Is<span>Nihal</span>Pawar<br>From Bhopal</h1>
+    </div>
+   </div> 
+</div>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="logo/picsofme.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-titles"> About Me</h1>
+                <p> So basically I have  completed my schooling from JGIS ,Chhindwara Madhya Pradesh 
+                    and currently I am persueing my Bachlors Degree in Computer Science From Bhopal (M.P)
+                    being from a basic middle class family have not up to many opprtunities and fundamentals
+                     of life amy be its a concern issue for someone but for me i took all as a advantages of my life
+                    thanks....
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                    <li><span>Web Designing</span><br>Create Your Own Interface</li>
+                    <li><span>Web Development</span><br>Web app Development With Me</li>
+                    <li><span>Figma</span><br>Design your UI/UX</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                    <li><span>2022- Current</span><br>Creating Projects for some Known TECH Institute as such 
+                    no experices of work at all </li>
+                    <li><span>2019-2021</span><br>profband tech logic as inter</li>
+                    <li><span>2018-2020</span><br>just learning to work with <br></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                    <li><span>2018</span><br>passed my 10th grade With 93%</li>
+                    <li><span>2019</span><br>passed 12th with 90%</li>
+                    <li><span>2022</span><br>at college 2nd year 3rd sem</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classlist.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classlist.remove("active-tab");
+        }
+        event.currentTarget.classlist.add("active-link");
+    }
+</script>
+</body>
+</html>
